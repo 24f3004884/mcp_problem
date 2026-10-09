@@ -4,6 +4,7 @@ Exposes one tool: solve_challenge
 Reads X-Exam-Challenge from HTTP headers and returns the required hash.
 """
 import hashlib
+import os
 from mcp.server import MCPServer
 
 # ---------- CONFIG ----------
