@@ -49,10 +49,11 @@ def solve_challenge() -> str:
 
 if __name__ == "__main__":
     # Run as public-friendly Streamable HTTP server
+    port = int(os.environ.get("PORT", 8000))
     mcp.run(
         transport="streamable-http",
         host="127.0.0.1",
-        port=8000,
+        port=port,
         stateless_http=True,
         json_response=True,
     )
